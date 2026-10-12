@@ -1,29 +1,26 @@
-<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const button1 = document.getElementById("quote-button");
+  const button2 = document.getElementById("portfolio-button");
+  const quoteBody = document.getElementById("quoteBody");
 
-const api_url ="https://zenquotes.io/api/random/";
-
-async function getQuote(url) {
-  try{
-    const response = await fetch(url);
-    if(!response.ok){
-      Throw new Error("Failed to Load Quote, Please try again.");
+  async function updateQuote() {
+    try {
+      const response = await fetch("https://dummyjson.com/quotes/random");
+      if (!response.ok) {
+        throw new Error("Failed to load quote, please try again.");
+      }
+      const data = await response.json();
+      quoteBody.innerText = `"${data.quote}" — ${data.author}`;
+    } catch (error) {
+      quoteBody.textContent = error.message;
     }
-    var data = await response.json();
-    document.getElementById("quoteBody").innerHTML= data.h;
-  }catch(error){
-    document.getElementById("quoteBody").innerText= error.message;
   }
-}
 
-const button1 = document.getElementById("quote-button");
-
-  button1.addEventListener("click", function() {
-      getQoute(api_url);
-  });
-
-/*const button2 = document.getElementById("portfolio-button");
-
+  button1.addEventListener("click", updateQuote);
+  
   button2.addEventListener("click", function(){
     window.location.href = "portfolio link";
-  });*/
-</script>
+  });
+});
+
+
