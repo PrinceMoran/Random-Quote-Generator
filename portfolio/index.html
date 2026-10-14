@@ -2,7 +2,7 @@
 <html>
   <head>
       <title>Group Portfolio</title>
-      <script src="portfolio.js" defer></script>
+      <script src="portfolio.js"></script>
       <meta charset="UTF-8">
       <meta name="description" content="The Group Portfolio of Thea Barrios, Prince Moran, and Crystal Sevilla, serving as a landing page for their app">
       <meta name="author" content="Thea Barrios, Prince Moran, and Crystal Sevilla">
@@ -13,6 +13,11 @@
     <header>
       <h1>Ctrl+Alt+Del</h1>
       <p>Welcome to our Group Portfolio! We're the team behind the Random Qoute Generator web page!</p>
+      <nav>
+         <a href="#proj">Project Details</a>
+         <a href="#members">Team Members</a>
+         <a href="#contact">Contact</a>
+      </nav>
     </header>
     <main>
       <section id="proj">
@@ -24,25 +29,25 @@
       <section id="members">
         <h2>The Team</h2>
         <section>
-          <img src="images/barrios.png" alt="A picture of Thea Pearl L. Barrios" width=30% height=auto>
-          <h3>Thea Pearl L. Barrios</h3>
-          <p>Handled JavaScipt</p>
-        </section>
-        <section>
           <img src="images/moran.jpg" alt="A picture of Prince Daniel L. Moran" width=30% height=auto>
           <h3>Prince Daniel L. Moran</h3>
-          <p>Handled HTML</p>
+          <p>HTML & Structure</p>
         </section>
         <section>
           <img src="images/sevilla.png" alt="A picture of Crystal Bea B. Sevilla" width=30% height=auto>
           <h3>Crystal Bea B. Sevilla</h3>
-          <p>Handled CSS</p>
+          <p>CSS & Design</p>
+        </section>
+        <section>
+          <img src="images/barrios.png" alt="A picture of Thea Pearl L. Barrios" width=30% height=auto>
+          <h3>Thea Pearl L. Barrios</h3>
+          <p>JavaScript & API</p>
         </section>
       </section>
     </main>
-    <footer>
+    <footer id="contact">
       <p>Got a question?</p>
-      <button id="feedback">Send us an email!</button>
+      <button id="questionBtn">Send us an email!</button>
     </footer>
   </body>
 </html>
