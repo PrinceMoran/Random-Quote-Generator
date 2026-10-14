@@ -40,6 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
   button1.addEventListener("click", updateQuote);
 
   button2.addEventListener("click", function () {
-    window.location.href = "https://theabarrios.github.io/tests/";
+    window.location.href = "https://princemoran.github.io/Random-Quote-Generator/";
   });
 });
