@@ -29,21 +29,82 @@ body {
 
 header {
     margin-bottom: 4px;
-    padding-top: 48px;
-    padding-bottom: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin-bottom: 0px;
+    font-size: 80px;
+    color:#651414;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
 }
 
 header p {
-    font-size: 32px;
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: 600;
 }
 
-nav {
-    
+/* Navigation Bar Styling */
+.navigation {
+    margin-bottom: 4px;
+    position: sticky;
+    top: 8px;
+    z-index: 100;
+    width: 100%;
+}
+
+.navigation nav {
+    background-color: #651414;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #5a4e35;
+    border-radius: 8px;
+    padding: 2px 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.75);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    gap: 24px;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 1000;
+    transition: color 0.3s ease;
+    padding: 4px 8px;
+}
+
+nav a:hover {
+    color: #f6cb76;
+    transform: scale(1.2);
 }
 
 section {
     scroll-margin-block: 20vh; /* Check if necessary later */
+}
+
+/* Section Heading Styling */
+h2 {
+    background-color: #651414;
+    padding: 8px 12px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #ffff;
+    font-size: 42px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.75);
 }
 
 /* section project */
@@ -51,14 +112,51 @@ section {
     background-color: bisque;
     border-style: solid #5a4e35;
     margin-bottom: 16px;
-    padding: 0.75rem 1.5rem;
+    padding: 12px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.75);
+}
+
+#proj p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+#appButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 12px;
+    background-color: #701111;
+    color: #ffff;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#appButton:hover {
+    background-color: #ffff;
+    color: #701111;
+    transform: scale(1.1);
+}
+
+#appButton:active {
+    background-color: #5a4e35;
+    transform: scale(0.95);
 }
 
 /* section members */
 #members {
     background-color: bisque;
-    border: 1px solid #5a4e35;
+    border-style: solid #5a4e35;
+    margin-bottom: 16px;
     padding: 12px 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.75);
 }
 
 .member {
@@ -85,22 +183,43 @@ section {
     margin-top: 0px;
 }
 
-h1 {
-    margin-bottom: 4px;
-    font-size: 60px;
+#contact {
+    
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    padding: 8px 20px;
 }
 
-h2 {
-    background-color: #651414;
-    padding: 12px 24px;
-    display: flex;
-    flex-direction: column;
-    color: #ffff;
+#contact p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 4px;
     text-align: center;
 }
 
-#appButton, #feedback {
+#questionBtn {
     display: flex;
     justify-content: center;
-    align-items: center;     
+    align-items: center;  
+    margin-bottom: 8px;
+    background-color: #701111;
+    color: #ffff;
+    border-radius: 100px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#questionBtn:hover {
+    background-color: #ffff;
+    color: #701111;
+    transform: scale(1.1);
+}
+
+#questionBtn:active {
+    background-color: #5a4e35;
+    transform: scale(0.95);
 }
