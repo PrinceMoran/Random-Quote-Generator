@@ -1,1 +1,151 @@
+* {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+  /*Background Gradient*/
+    background-color: #f2e3c6;
+    background-image: 
+                radial-gradient(circle at 50% 50%, rgba(244, 230, 200, 0.8), rgba(210, 185, 140, 0.9)),
+                radial-gradient(circle at 10% 20%, rgba(139, 69, 19, 0.15) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(101, 67, 33, 0.15) 0%, transparent 25%),
+                radial-gradient(circle at 50% 0%, rgba(0,0,0,0.1) 0%, transparent 50%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 16px;
+    color: #1a1612;
+    line-height: 1.6;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    padding: 0 24px;
+}
+
+header {
+    margin-bottom: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    background-color: #701111;
+    border-radius: 14px;
+    margin-bottom: 0px;
+    font-size: 60px;
+    width: 100%;
+    color:#ffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.75);
+}
+
+.site-description {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    text-align: center;
+    color: #060606;
+}
+
+header p {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+section {
+    scroll-margin-block: 20vh;
+}
+
+/* Main Content Styling */
+#main {
+    background-color: #f2e3c6;
+    border: 2px solid #5a4e35;
+    border-radius: 12px;
+    padding: 40px;
+    padding-bottom: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+#quote {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+#quoteAuthor {
+    font-style: italic;
+    font-family: 'IM Fell English';
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+#quote-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 8px;
+    background-color: #dfc4a3;
+    color: #0e0e0e;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Footer Styling */
+footer {
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    padding: 8px 20px;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+#portfolio-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    background-color: #701111;
+    color: #ffff;
+    border-radius: 100px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#portfolio-button:hover {
+    background-color: #ffff;
+    color: #701111;
+    transform: scale(1.1);
+}
+
+#portfolio-button:active {
+    background-color: #5a4e35;
+    transform: scale(0.95);
+}
