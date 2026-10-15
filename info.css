@@ -1,70 +1,95 @@
 * {
-  margin-left: auto;
-  marrgin-right: auto;
-  padding: 0;
-  box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #f2e3c6;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-family: 'IM Fell English', Georgia, serif;
-  font-size: 1rem;
-  color: #1a1612;
-  line-height: 1.6;
-  align-items: center;
+  /*Background Gradient*/
+    background-color: #f2e3c6;
+    background-image: 
+                radial-gradient(circle at 50% 50%, rgba(244, 230, 200, 0.8), rgba(210, 185, 140, 0.9)),
+                radial-gradient(circle at 10% 20%, rgba(139, 69, 19, 0.15) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(101, 67, 33, 0.15) 0%, transparent 25%),
+                radial-gradient(circle at 50% 0%, rgba(0,0,0,0.1) 0%, transparent 50%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 16px;
+    color: #1a1612;
+    line-height: 1.6;
+    align-items: center;
 }
 
 header, main, footer {
-  width: 100%;
-  max-width: 900px;
-  padding: 0 1.5rem;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    padding: 0 24px;
 }
 
 header {
-  text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 1.5rem;
+    margin-bottom: 4px;
+    padding-top: 48px;
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+header p {
+  
+    font-size: 32px;
 }
 
 section {
-  scroll-margin-block: 20vh; /* Check if necessary later */
+    scroll-margin-block: 20vh; /* Check if necessary later */
 }
 
 /* section project */
-proj {
-
+#proj {
+    background-color: bisque;
+    border-style: solid #5a4e35;
+    margin-bottom: 16px;
+    padding: 0.75rem 1.5rem;
 }
 
 /* section members */
-members {
-
+#members {
+    background-color: bisque;
+    border: 1px solid #5a4e35;
+    padding: 12px 24px;
 }
 
 h1 {
-
+    margin-bottom: 4px;
+    font-size: 80px;
 }
 
 h2 {
-
+    background-color: #651414;
+    padding: 12px 24px;
+    color: #ffff;
+    text-align: center;
 }
 
 h3 {
-
+    text-align: center;
 }
 
 img {
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
 }
 
 p {
-
+    text-align: center;
 }
 
-footer {
-
+#appButton, #feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;     
 }
