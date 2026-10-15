@@ -24,16 +24,16 @@ document.addEventListener("DOMContentLoaded", () => {
   async function updateQuote() {
     try {
       const q = await getQuote();
-      quoteBody.textContent = `"${q.quote}"`;
-      author.textContent = `—${q.author}`;
+      quoteBody.innerText = `"${q.quote}"`;
+      author.innerText = `—${q.author}`;
     } catch (error) {
       console.error(error);
       if (error instanceof TypeError) {
-        quoteBody.textContent = "Connection problem. Please check your internet and try again.";
+        quoteBody.innerText = "Connection problem. Please check your internet and try again.";
       } else {
-        quoteBody.textContent = error.message;
+        quoteBody.innerText = error.message;
       }
-      author.textContent = "";
+      author.innerText = "";
     }
   }
 
