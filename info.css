@@ -37,7 +37,8 @@ header {
 
 header h1 {
     margin-bottom: 0px;
-    font-size: 80px;
+    font-size: clamp(28px, 5vw + 10px, 56px);
+    line-height: 1.2;
     color:#651414;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
 }
