@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let cache = JSON.parse(localStorage.getItem("quoteCache")) || [];
 
     if (cache.length == 0) {
-      const response = await fetch("https://quoteslate.vercel.app/api/quotes/random?count=50");
+      const response = await fetch("https://quoteslate.vercel.app/api/quotes/random?tags=inspiration&count=50");
       if (!response.ok) {
         throw new Error("Failed to load quotes, please try again.");
       }
