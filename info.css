@@ -173,6 +173,9 @@ h2 {
     height: 150px;
     object-fit: cover;
     margin-bottom: 12px;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh
 }
 
 .member h3 {
