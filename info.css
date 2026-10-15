@@ -168,14 +168,14 @@ h2 {
 }
 
 .member img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 12px;
+    display: flex;
     justify-content: center; 
     align-items: center;
-    height: 100vh
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    margin-bottom: 12px;
 }
 
 .member h3 {
