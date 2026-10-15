@@ -7,6 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   
   button2.addEventListener("click", function(){
-    window.location.href="mailto:theapearlbarrios@gmail.com";
+    window.open("https://mail.google.com/mail/?view=cm&to=theapearllolobarrios@gmail.com");
   });
 });
